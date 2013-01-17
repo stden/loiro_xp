@@ -1,4 +1,5 @@
 @echo off
+git checkout master
 git pull
 echo Создать пользователя olymp с паролем olymp
 net user olymp olymp /ADD
