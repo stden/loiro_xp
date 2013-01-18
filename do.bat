@@ -38,4 +38,4 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v T
 
 attrib "%ALLUSERSPROFILE%\Desktop\desktop.ini" +s +h
 
-reg add "HKEY_CLASSES_ROOT\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}" /v "LocalizedString" /t REG_EXPAND_SZ /d "%COMPUTERNAME% %USERNAME%" /f
+reg add "HKEY_CLASSES_ROOT\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}" /v "LocalizedString" /t REG_EXPAND_SZ /d "192.168.%CLASS%.%COMP% %USERNAME%" /f
