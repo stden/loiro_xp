@@ -5,6 +5,7 @@ git config --global push.default simple
 git commit -a -m"%COMPUTERNAME%"
 git checkout master
 git pull
+git clean -f
 echo Создать пользователя olymp с паролем olymp
 net user olymp olymp /ADD
 echo Создание каталога C:\work
