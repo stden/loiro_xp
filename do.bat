@@ -1,4 +1,7 @@
 @echo off
+
+netsh interface ip set address "Local Area Connection" dhcp
+
 git config --global user.email "super.denis@gmail.com"
 git config --global user.name "Denis Stepulenok"
 git config --global push.default simple
