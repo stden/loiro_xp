@@ -33,3 +33,5 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v T
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v TMP /t REG_SZ /d "C:\temp" /f
 
 attrib "%ALLUSERSPROFILE%\Desktop\desktop.ini" +s +h
+
+reg add "HKEY_CLASSES_ROOT\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}" /v "LocalizedString" /t REG_EXPAND_SZ /d "%COMPUTERNAME% %USERNAME%" /f
