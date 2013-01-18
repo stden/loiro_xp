@@ -10,7 +10,7 @@ git commit -a -m"%COMPUTERNAME%"
 git checkout master
 git pull
 git clean -f
-git push
+rem git push
 
 echo Создать пользователя olymp с паролем olymp
 net user olymp olymp /ADD
