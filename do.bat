@@ -26,3 +26,8 @@ if exist "C:\soft\vs-2005\Common7\IDE\VCExpress.exe" (
 ) else (
     rem Новый Delphi
 )
+
+echo Временный каталог C:\temp
+mkdir C:\temp
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v TEMP /t REG_SZ /d "C:\temp" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v TMP /t REG_SZ /d "C:\temp" /f
