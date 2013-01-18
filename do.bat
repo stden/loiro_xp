@@ -10,7 +10,6 @@ git clean -f
 echo Создать пользователя olymp с паролем olymp
 net user olymp olymp /ADD
 echo Создание каталога C:\work
-rmdir C:\work /q/s
 mkdir C:\work
 rmdir C:\.dist /q/s
 rmdir C:\olymp /q/s
