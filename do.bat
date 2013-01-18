@@ -1,4 +1,5 @@
 @echo off
+git commit -a -m"Local changes"
 git checkout master
 git pull
 echo Создать пользователя olymp с паролем olymp
