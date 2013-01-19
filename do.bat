@@ -1,7 +1,7 @@
 @echo off
 
 netsh interface ip set address "Local Area Connection" dhcp
-netsh interface ip set address "╧юфъы■ўхэшх яю ыюъры№эющ ёхЄш" dhcp
+netsh interface ip set address "Подключение по локальной сети" dhcp
 
 git config --global user.email "super.denis@gmail.com"
 git config --global user.name "Denis Stepulenok"
