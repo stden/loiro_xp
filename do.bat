@@ -24,13 +24,15 @@ if exist "C:\soft\Delphi7\Bin\delphi32.exe" (
     reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v DELPHI /t REG_SZ /d "C:\soft\Delphi7" /f
 ) else (
     rem Новый Delphi
+    reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v DELPHI /t REG_SZ /d "C:\Program Files\Borland\Delphi7" /f
 )
 
 if exist "C:\soft\vs-2005\Common7\IDE\VCExpress.exe" (
     rem Старый Visual C++ с предыдущего года
     reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v VS2005 /t REG_SZ /d "C:\soft\vs-2005" /f
 ) else (
-    rem Новый Delphi
+    rem Новый Visual C++
+    reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v VS2005 /t REG_SZ /d "C:\Program Files\Microsoft Visual Studio 8" /f
 )
 
 echo Временный каталог C:\temp
