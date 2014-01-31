@@ -1,8 +1,10 @@
 @echo off
 
+echo Включаю DHCP чтобы работал Интернет
 netsh interface ip set address "Local Area Connection" dhcp
 netsh interface ip set address "Подключение по локальной сети" dhcp
 
+echo Настраиваем git
 git config --global user.email "super.denis@gmail.com"
 git config --global user.name "Denis Stepulenok"
 git config --global push.default simple
